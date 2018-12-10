@@ -1,0 +1,21 @@
+/* Bootstrap Portfolio by WBM, 10/11/18, style.css */
+
+p {
+    font-size: 18px;
+    line-height: 1.9;
+}
+
+footer {
+    font-size: 12px;
+    color: white;
+    background-color: #666666;
+    border-top: 8px solid #4aaaa5;
+}
+
+.atmosphere {  
+    background-image: url("../images/fabric_1.png");
+}
+
+.white-back {
+    background-color: #ffffff;
+}
