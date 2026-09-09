@@ -43,6 +43,8 @@
   .card:hover{border-color:var(--accent)}
   .card .t{font-weight:600; margin-bottom:3px}
   .card .d{color:var(--muted); font-size:14px}
+  .card .go{margin-top:11px; display:flex; flex-wrap:wrap; gap:8px 18px; font-size:14px}
+  .card .go a{font-weight:500}
   .soon{border-style:dashed; opacity:.75}
   ul.links{list-style:none; padding:0; margin:0; display:flex; flex-wrap:wrap; gap:8px 22px}
   footer{border-top:1px solid var(--rule); padding-top:20px;
@@ -74,6 +76,20 @@
   <section>
     <h2>Selected work</h2>
 
+    <div class="card">
+      <div class="t">Mandelbrot Deep Zoom</div>
+      <div class="d">A GPU renderer that descends 33 decades into the Mandelbrot
+      set, written in Rust and WGSL and running on both Apple Silicon and cloud
+      NVIDIA from one source. Perturbation with exponential-map strips, so the
+      plane is rendered once in log-polar form rather than once per frame. The
+      result is <em>Falling Into Scepter Valley</em>: 5,510 frames, 3:04 at 4K30,
+      ending on a 634 pixel minibrot.</div>
+      <div class="go">
+        <a href="https://youtu.be/b2cpUL_xEc4">Watch the film</a>
+        <a href="https://github.com/Wilder101/mandelbrot-deep-zoom">Code on GitHub</a>
+      </div>
+    </div>
+
     <a class="card" href="https://github.com/Wilder101/GCSDDprereqsWeb">
       <div class="t">UWB GCSDD prerequisite coursework</div>
       <div class="d">Four C++ programs: inventory batch processing, a hangman engine,
@@ -81,11 +97,6 @@
       Eratosthenes. Written for the University of Washington Bothell Graduate
       Certificate in Software Design &amp; Development.</div>
     </a>
-
-    <div class="card soon">
-      <div class="t">Fractal, in progress</div>
-      <div class="d">Current project. A public write-up is on the way.</div>
-    </div>
   </section>
 
   <section>
@@ -96,7 +107,7 @@
     </ul>
   </section>
 
-  <footer>Rebuilt 2026. Earlier projects have been retired.</footer>
+  <footer>Rebuilt 2026.</footer>
 
 </div>
 </body>
