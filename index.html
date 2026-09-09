@@ -1,249 +1,104 @@
-<!-- Bootstrap Portfolio by WBM, 10/10/18, index file; consolidated About, Portfolio, Contact on 12/8/18 -->
-
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wilder Molyneux</title>
+<meta name="description" content="Wilder Molyneux — Enterprise Architect, Seattle.">
+<link rel="icon" href="assets/images/favicon.ico">
+<style>
+  :root{
+    --bg:#fbfaf8; --fg:#1a1a1a; --muted:#5f5c57; --rule:#e2ded7;
+    --accent:#7a4b2a; --card:#ffffff;
+  }
+  @media (prefers-color-scheme:dark){
+    :root:not([data-theme="light"]){
+      --bg:#141414; --fg:#ececec; --muted:#9c9791; --rule:#2c2c2c;
+      --accent:#d19a6a; --card:#1c1c1c;
+    }
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:var(--bg); color:var(--fg);
+    font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:640px; margin:0 auto; padding:14vh 24px 12vh}
+  header{display:flex; align-items:center; gap:20px; margin-bottom:44px}
+  header img{width:76px; height:76px; border-radius:50%; object-fit:cover; flex:none;
+    border:1px solid var(--rule)}
+  h1{margin:0 0 4px; font-size:28px; letter-spacing:-.02em; font-weight:600}
+  .role{margin:0; color:var(--muted); font-size:15px}
+  h2{font-size:12px; letter-spacing:.1em; text-transform:uppercase;
+    color:var(--muted); font-weight:600; margin:0 0 14px}
+  section{margin-bottom:44px}
+  p{margin:0 0 14px}
+  a{color:var(--accent); text-decoration:none; border-bottom:1px solid transparent}
+  a:hover{border-bottom-color:currentColor}
+  .card{
+    display:block; background:var(--card); border:1px solid var(--rule);
+    border-radius:10px; padding:16px 18px; margin-bottom:10px;
+    color:inherit; transition:border-color .15s ease;
+  }
+  .card:hover{border-color:var(--accent)}
+  .card .t{font-weight:600; margin-bottom:3px}
+  .card .d{color:var(--muted); font-size:14px}
+  .soon{border-style:dashed; opacity:.75}
+  ul.links{list-style:none; padding:0; margin:0; display:flex; flex-wrap:wrap; gap:8px 22px}
+  footer{border-top:1px solid var(--rule); padding-top:20px;
+    color:var(--muted); font-size:13px}
+</style>
+</head>
+<body>
+<div class="wrap">
 
-        <!-- favicon -->
-        <link rel="shortcut icon" href="assets/images/favicon.ico">
-
-        <!-- CSS -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-
-        <link rel="stylesheet" href="assets/css/style.css">
-
-        <title>About | Bootstrap Portfolio</title>
-
-    </head>
-
-  <body>
-
-    <!-- Nav container separate from main content -->
-    <div class="container">
-
-        <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark"> -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand">Wilder Molyneux</a>
-        </nav>
-    </div>
-        
-    <div class="atmosphere">
-
-        <!-- About Me container -->
-        <div class="container p-4">
-
-            <!-- Heading -->
-            <div class="row white-back">
-                <div class="col-12 p-3">
-                    <h1>About Me</h1>
-                    <hr>
-                </div>
-            </div>
-
-            <!-- Main content with responsive headshot image -->
-            <div class="row white-back">
-                <div class="col-12">
-                    <img src="assets/images/wildermolyneuxprofile.jpg" class="float-left m-3" alt="Wilder Molyneux">
-
-                    <p class="font-weight-normal m-2">Wilder Molyneux is a tried and true Seattleite, born on Seattle’s Capitol Hill, educated near and far, and loves the Pacific Northwest. He has a passion for full stack web development. He started programming computers at the age of eight and has never stopped his love for technology, computing, and rapid change.</p><br>
-
-                    <p class="font-weight-normal m-2">In his day job, he works at a Fortune 50 multinational corporation as an Enterprise Architect. He holds a certificate in Enterprise Architecture from Carnegie Mellon University and is a certified practitioner of The Open Group’s Architecture Framework (TOGAF), which he uses daily.</p><br>
-                
-                    <p class="font-weight-normal m-2">When not keeping up with technology or working, you can find Wilder outdoors either flying through the air on bicycles, taking two-wheeled backcountry trips with his friends, or camping with his family.</p>                      
-                </div>
-            </div>
-
-        </div> <!-- End About Me container -->
-
-        <!-- Contact container -->
-        <div class="container p-4"> 
-
-            <!-- Heading -->
-            <div class="row white-back">
-                <div class="col-12 p-3">
-                    <h1>Contact</h1>
-                    <hr>
-                </div>
-            </div>
-
-            <!-- Contact text -->
-            <div class="row white-back">
-                <div class="col-12">                  
-                    <p class="font-weight-normal m-2">You can connect with me on <a href="https://www.linkedin.com/in/wilder-molyneux-25aa457a/" target="_blank">LinkedIn</a>, contribute to one of my projects on <a href="https://github.com/Wilder101" target="_blank">GitHub</a>, or get in touch with me at <a href="mailto:wilder@gmail.com" target="_top">wilder.m@gmail.com</a>.</p>
-                </div>
-            </div>
-
-        </div> <!-- End Contact container -->
-
-        <!-- Portfolio container -->
-        <div class="container p-4">
-
-            <!-- Heading -->
-            <div class="row white-back">
-                <div class="col-12 p-3">
-                    <h1>Portfolio</h1>
-                    <hr>
-                </div>
-            </div>
-
-            <!-- Portfolio projects -->
-            <div class="row white-back p-3">
-                <div class="col-4">
-                    <div class="card">
-                        <a href="https://wilder101.github.io/Word-Guess-Game/" target="_blank">
-                            <img class="card-img-top" src="assets/images/hangman-300x200.jpg" alt="Word Guess Game aka Motorcycle Hangman">
-                        </a>
-                        <div class="card-body">
-                            <a href="https://wilder101.github.io/Word-Guess-Game/" target="_blank" class="card-link">Word Guess Game</a><hr>
-                            <a href="https://github.com/Wilder101/Word-Guess-Game" target="_blank" class="card-link">GitHub code</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="card">
-                        <a href="https://wilder101.github.io/unit-4-game/" target="_blank">
-                            <img class="card-img-top" src="assets/images/crystals-collector-300x200.jpg" alt="CrystalsCollector Game">
-                        </a>
-                        <div class="card-body">
-                            <a href="https://wilder101.github.io/unit-4-game/" target="_blank" class="card-link">CrystalsCollector Game</a><hr>
-                            <a href="https://github.com/Wilder101/unit-4-game" target="_blank" class="card-link">GitHub code</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <!-- white space; code for clarity -- "this page intentionally left blank" -->
-                </div>
-            </div>
-
-            <!-- Second row of portfolio work -->
-            <div class="row white-back p-3">
-                <div class="col-4">
-                        <div class="card">
-                            <a href="https://wilder101.github.io/TriviaGame/" target="_blank">
-                                <img class="card-img-top" src="assets/images/trivia-300x200.jpg" alt="Totally Spacey Trivia Game">
-                            </a>
-                            <div class="card-body">
-                                <a href="https://wilder101.github.io/TriviaGame/" target="_blank" class="card-link">Totally Spacey Trivia</a><hr>
-                                <a href="https://github.com/Wilder101/TriviaGame" target="_blank" class="card-link">GitHub code</a>
-                            </div>
-                        </div>
-                    </div>
-                <div class="col-4">
-                    <div class="card">
-                        <a href="https://wilder101.github.io/GifTastic/" target="_blank">
-                            <img class="card-img-top" src="assets/images/giftastic-300x200.jpg" alt="GifTastic still and animated image search">
-                        </a>
-                        <div class="card-body">
-                            <a href="https://wilder101.github.io/GifTastic/" target="_blank" class="card-link">GifTastic</a><hr>
-                            <a href="https://github.com/Wilder101/GifTastic" target="_blank" class="card-link">GitHub code</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <!-- white space; code for clarity -- "this page intentionally left blank" -->
-                </div>
-            </div>
-
-            <div class="row white-back p-3">
-                <div class="col-4">
-                    <div class="card">
-                        <a href="https://wilder101.github.io/TrainScheduler/" target="_blank">
-                            <img class="card-img-top" src="assets/images/train-300x200.jpg" alt="Train Scheduler">
-                        </a>
-                        <div class="card-body">
-                            <a href="https://wilder101.github.io/TrainScheduler/" target="_blank" class="card-link">Train Scheduler</a><hr>
-                            <a href="https://github.com/Wilder101/TrainScheduler" target="_blank" class="card-link">GitHub code</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="card">
-                        <a href="https://chengyisong.github.io/bottomsup/" target="_blank">
-                            <img class="card-img-top" src="assets/images/bottomsup-300x200.jpg" alt="Bottoms Up">
-                        </a>
-                        <div class="card-body">
-                            <a href="https://chengyisong.github.io/bottomsup/" target="_blank" class="card-link">Bottoms Up</a><hr>
-                            <a href="https://github.com/chengyisong/bottomsup" target="_blank" class="card-link">GitHub code</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <!-- white space; code for clarity -- "this page intentionally left blank" -->
-                </div>
-            </div>
-
-            <div class="row white-back p-3">
-                <div class="col-4">
-                    <div class="card">
-                        <a href="https://github.com/Wilder101/liri-node-app" target="_blank">
-                            <img class="card-img-top" src="assets/images/liri-300x200.jpg" alt="LIRI">
-                        </a>
-                        <div class="card-body">
-                            <a class="card-link">LIRI - a command line application</a><hr>
-                            <a href="https://github.com/Wilder101/liri-node-app" target=_blank" class="card-link">GitHub code</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="card">
-                        <a href="https://mighty-ridge-42671.herokuapp.com/" target="_blank">
-                            <img class="card-img-top" src="assets/images/friend-finder-300x200.jpg" alt="Friend Finder">
-                        </a>
-                        <div class="card-body">
-                            <a href="https://mighty-ridge-42671.herokuapp.com/" target="_blank" class="card-link">Friend Finder</a><hr>
-                            <a href="https://github.com/Wilder101/FriendFinder" target="_blank" class="card-link">GitHub code</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <!-- white space; code for clarity -- "this page intentionally left blank" -->
-                </div>
-            </div>
-
-            <div class="row white-back p-3">
-                <div class="col-4">
-                    <div class="card">
-                        <a href="https://github.com/Wilder101/Bamazon" target="_blank">
-                            <img class="card-img-top" src="assets/images/bamazon-300x200.jpg" alt="Bamazon">
-                        </a>
-                        <div class="card-body">
-                            <a class="card-link">Bamazon - a command line application</a><hr>
-                            <a href="https://github.com/Wilder101/Bamazon" target="_blank" class="card-link">GitHub code</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="card">
-                        <a href="https://thawing-reaches-85632.herokuapp.com/login" target="_blank">
-                            <img class="card-img-top" src="assets/images/sell-something-300x200.jpg" alt="Sell Something">
-                        </a>
-                        <div class="card-body">
-                            <a href="https://thawing-reaches-85632.herokuapp.com/login" target="_blank" class="card-link">Sell Something</a><hr>
-                            <a href="https://github.com/ramezray/Project2" target="_blank" class="card-link">GitHub code</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <!-- white space; code for clarity -- "this page intentionally left blank" -->
-                </div>
-            </div>
-
-        </div> <!-- Ent portfolio container -->
-
-    </div> <!-- End atmosphere division -->
-
-    <!-- Footer -->
+  <header>
+    <img src="assets/images/wildermolyneuxprofile.jpg" alt="Wilder Molyneux">
     <div>
-        <footer class="text-center font-weight-light text-monospace p-4">Wilder Molyneux &copy; 2019</footer>
+      <h1>Wilder Molyneux</h1>
+      <p class="role">Enterprise Architect · Seattle</p>
     </div>
+  </header>
 
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <section>
+    <p>A tried and true Seattleite, born on Capitol Hill, educated near and far, and
+    fond of the Pacific Northwest. I started programming at the age of eight and never
+    lost the appetite for technology and rapid change.</p>
+    <p>By day I work as an Enterprise Architect at a Fortune 50 multinational. I hold a
+    certificate in Enterprise Architecture from Carnegie Mellon University and am a
+    certified TOGAF practitioner, which I put to use daily. Outside of work you'll find
+    me on a bicycle, on backcountry two-wheeled trips with friends, or camping with my
+    family.</p>
+  </section>
 
-  </body>
+  <section>
+    <h2>Selected work</h2>
+
+    <a class="card" href="https://github.com/Wilder101/GCSDDprereqsWeb">
+      <div class="t">UWB GCSDD prerequisite coursework</div>
+      <div class="d">Four C++ programs — inventory batch processing, a hangman engine,
+      a stack-based Wumpus hunter over a mountain-cave graph, and a Sieve of
+      Eratosthenes. Written for the University of Washington Bothell Graduate
+      Certificate in Software Design &amp; Development.</div>
+    </a>
+
+    <div class="card soon">
+      <div class="t">Fractal — in progress</div>
+      <div class="d">Current project. A public write-up is on the way.</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Elsewhere</h2>
+    <ul class="links">
+      <li><a href="https://github.com/Wilder101">GitHub</a></li>
+      <li><a href="https://www.linkedin.com/in/wilder-molyneux-25aa457a/">LinkedIn</a></li>
+      <li><a href="mailto:wilder.m@gmail.com">Email</a></li>
+    </ul>
+  </section>
+
+  <footer>Rebuilt 2026 — earlier coursework projects have been retired.</footer>
+
+</div>
+</body>
 </html>
